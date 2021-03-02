@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".GameOver">
+
+        <ImageView
+            android:id="@+id/imageView_game_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.098"
+            app:srcCompat="@drawable/game_over" />
+
+        <TextView
+            android:id="@+id/textView_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/record"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/button_novo_jogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.373"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_game_over"
+            app:layout_constraintVertical_bias="0.379" />
+
+        <TextView
+            android:id="@+id/textView_record_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/button_novo_jogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.146"
+            app:layout_constraintStart_toEndOf="@+id/textView_record"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_game_over"
+            app:layout_constraintVertical_bias="0.379" />
+
+        <TextView
+            android:id="@+id/textView_pontuacao_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/button_novo_jogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.145"
+            app:layout_constraintStart_toEndOf="@+id/textView_pontuacao"
+            app:layout_constraintTop_toBottomOf="@+id/textView_record_value"
+            app:layout_constraintVertical_bias="0.245" />
+
+        <TextView
+            android:id="@+id/textView_pontuacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/pontuacao"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/button_novo_jogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.373"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_record"
+            app:layout_constraintVertical_bias="0.117" />
+
+        <Button
+            android:id="@+id/button_novo_jogo"
+            android:layout_width="189dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/novo_jogo"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/verde"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/button_sair"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_game_over"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/button_sair"
+            android:layout_width="189dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="92dp"
+            android:text="@string/sair"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/vermelho"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

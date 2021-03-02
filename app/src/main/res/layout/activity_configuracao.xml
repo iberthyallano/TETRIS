@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Configuracao">
+
+        <TextView
+            android:id="@+id/textView_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="28dp"
+            android:text="@string/dificuldade"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.866" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_difuculdade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView_subtitulo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/radioButton_facil"
+                android:layout_width="364dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/facil"/>
+
+            <RadioButton
+                android:id="@+id/radioButton_madio"
+                android:layout_width="364dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/medio"/>
+
+            <RadioButton
+                android:id="@+id/radioButton_dificil"
+                android:layout_width="364dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/dificil"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView_subtitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantidade"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:drawableTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.447" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_Quantidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_subtitulo"
+            app:layout_constraintVertical_bias="0.182">
+
+            <RadioButton
+                android:id="@+id/radioButton_3"
+                android:layout_width="364dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/_3"/>
+
+            <RadioButton
+                android:id="@+id/radioButton_4"
+                android:layout_width="364dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/_4"/>
+
+            <RadioButton
+                android:id="@+id/radioButton_6"
+                android:layout_width="364dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/_6"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button_cancelar"
+            android:layout_width="166dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="24dp"
+            android:text="@string/cancelar"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/vermelho"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/button_salvar"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/button_salvar"
+            android:layout_width="166dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/salvar"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/verde"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/button_cancelar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.924" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

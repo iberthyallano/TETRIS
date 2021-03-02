@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TETRIS</string>
+    <string name="novo_jogo">New game</string>
+    <string name="configurar">Settings</string>
+    <string name="continuar">Continue</string>
+    <string name="sair">Finish</string>
+    <string name="cancelar">Cancel</string>
+    <string name="salvar">Save</string>
+    <string name="_6">6</string>
+    <string name="_4">4</string>
+    <string name="_3">3</string>
+    <string name="record">Record</string>
+    <string name="dificuldade">Difficulty</string>
+    <string name="quantidade">Number of pieces</string>
+    <string name="facil">Easy</string>
+    <string name="dificil">Difficult</string>
+    <string name="medio">Middle</string>
+    <string name="pontuacao">Punctuation</string>
+</resources>

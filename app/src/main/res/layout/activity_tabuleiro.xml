@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Tabuleiro"
+        android:gravity="bottom">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/textView_pontuacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:text="TextView"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageButton_pause"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton_pause"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageButton_pause" />
+
+            <ImageButton
+                android:id="@+id/imageButton_pause"
+                android:layout_width="53dp"
+                android:layout_height="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/botao_pausa" />
+
+            <ImageView
+                android:id="@+id/imageView_proxima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toEndOf="@+id/imageButton_pause"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.2"
+                app:srcCompat="@drawable/proxima_o" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <GridLayout
+            android:id="@+id/gridboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageButton
+                android:id="@+id/imageButton_flip"
+                android:layout_width="74dp"
+                android:layout_height="43dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="4dp"
+                android:layout_x="158dp"
+                android:layout_y="40dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageButton_baixo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.035"
+                app:srcCompat="@drawable/botao_flip" />
+
+            <ImageButton
+                android:id="@+id/imageButton_direita"
+                android:layout_width="74dp"
+                android:layout_height="43dp"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="50dp"
+                android:layout_x="243dp"
+                android:layout_y="73dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageButton_baixo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageButton_flip"
+                app:layout_constraintVertical_bias="0.493"
+                app:srcCompat="@drawable/botao_esquerda" />
+
+            <ImageButton
+                android:id="@+id/imageButton_baixo"
+                android:layout_width="74dp"
+                android:layout_height="43dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:layout_x="158dp"
+                android:layout_y="100dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/botao_baixo" />
+
+            <ImageButton
+                android:id="@+id/imageButton_esquerda"
+                android:layout_width="74dp"
+                android:layout_height="43dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="50dp"
+                android:layout_x="72dp"
+                android:layout_y="74dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageButton_baixo"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton_direita"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageButton_flip"
+                app:layout_constraintVertical_bias="0.493"
+                app:srcCompat="@drawable/botao_direita" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</layout>
+

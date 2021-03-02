@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView_tetris"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_blocos"
+            app:layout_constraintVertical_bias="0.050000012"
+            app:srcCompat="@drawable/tetris" />
+
+        <ImageView
+            android:id="@+id/imageView_blocos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/blocos_logo" />
+
+        <Button
+            android:id="@+id/button_novo_jogo"
+            android:layout_width="189dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/novo_jogo"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/verde"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/button_continuar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_tetris"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/button_continuar"
+            android:layout_width="189dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/continuar"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/azul"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/button_configurar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button_configurar"
+            android:layout_width="189dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="148dp"
+            android:text="@string/configurar"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/vermelho"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
